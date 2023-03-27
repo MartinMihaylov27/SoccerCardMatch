@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/SoccerCardMatch/static/css/main.32eb833e.css",
-    "main.js": "/SoccerCardMatch/static/js/main.5147ef85.js",
+    "main.js": "/SoccerCardMatch/static/js/main.44793bbb.js",
     "index.html": "/SoccerCardMatch/index.html",
     "main.32eb833e.css.map": "/SoccerCardMatch/static/css/main.32eb833e.css.map",
-    "main.5147ef85.js.map": "/SoccerCardMatch/static/js/main.5147ef85.js.map"
+    "main.44793bbb.js.map": "/SoccerCardMatch/static/js/main.44793bbb.js.map"
   },
   "entrypoints": [
     "static/css/main.32eb833e.css",
-    "static/js/main.5147ef85.js"
+    "static/js/main.44793bbb.js"
   ]
 }
