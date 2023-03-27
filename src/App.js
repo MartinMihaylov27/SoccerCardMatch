@@ -29,6 +29,7 @@ function App(){
         setChoiceTwo(null)
         setCards(shuffledCards)
         setTurns(0)
+        gameWon = false
     }
 
     //handle choices
