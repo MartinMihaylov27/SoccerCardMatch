@@ -11,6 +11,7 @@ const cardImages = [
     {"src": "https://martinmihaylov27.github.io/SoccerCardMatch/images/ChelseaLogo.png", matched: false}
 ]
 var matchesFound = 0
+var gameWon = false
 
 function App(){
     const [cards, setCards] = useState([])
@@ -28,7 +29,6 @@ function App(){
         setChoiceTwo(null)
         setCards(shuffledCards)
         setTurns(0)
-        document.getElementsByClassName("Win")[0].style.opacity = "0";
     }
 
     //handle choices
@@ -78,10 +78,12 @@ function App(){
     useEffect(() => {
         shuffleCards()
     }, [])
+
     if (matchesFound === 6){
-        document.getElementsByClassName("Win")[0].style.opacity = "1";
+        gameWon = true
         matchesFound = 0
     }
+
     return(
         <div className="App">
             <h1>Soccer Match</h1>
@@ -97,12 +99,9 @@ function App(){
                     />
                 ))}
             </div>
-            <h1 className='Win'>You Won in {turns} turns!</h1>
-            <p>Turns: {turns}</p>
+            <p>{gameWon ? "You won in " + turns + " turns!" : "Turns: " + turns}</p>
         </div>
     );
-
-   
 }
 
 export default App
